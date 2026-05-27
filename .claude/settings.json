@@ -1,18 +1,41 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
-      "Bash(pytest *)",
-      "Bash(ruff check *)",
-      "Bash(awk *)",
+      "Bash(pytest:*)",
+      "Bash(python3 -m pytest:*)",
+      "Bash(python3 -m py_compile:*)",
+      "Bash(ruff check:*)",
+      "Bash(ruff format --check:*)",
+      "Bash(mypy:*)",
+      "Bash(uv run:*)",
+      "Bash(uv sync)",
       "Bash(make check)",
       "Bash(make docs-check)",
       "Bash(make lint-vista)",
       "Bash(make lint-modern)",
-      "Bash(claude-status *)",
-      "Bash(vista list *)",
-      "Bash(vista routine *)",
-      "Bash(journalctl *)",
-      "Bash(m lint *)"
+      "Bash(vista:*)",
+      "Bash(mctl doctor:*)",
+      "Bash(mctl status:*)",
+      "Bash(mctl version:*)",
+      "Bash(mctl vista:*)",
+      "Bash(mctl exec:*)",
+      "Bash(m lint:*)",
+      "Bash(claude-status:*)",
+      "Bash(git-update-repos:*)",
+      "Bash(make verify:*)",
+      "Bash(make check:*)",
+      "Bash(make preflight:*)",
+      "Bash(make help:*)",
+      "Bash(make gen-check:*)",
+      "Bash(make license:*)",
+      "Bash(make -n:*)",
+      "Bash(journalctl:*)"
+    ],
+    "ask": [
+      "Bash(mctl bootstrap:*)",
+      "Bash(mctl recreate:*)",
+      "Bash(mctl restart:*)"
     ]
   }
 }
