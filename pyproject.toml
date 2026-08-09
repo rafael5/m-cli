@@ -27,7 +27,7 @@ m = "m_cli.cli:main"
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=8.0",
+    "pytest>=9.0.3",
     "pytest-cov",
     "pytest-watch",
     "pytest-randomly",
